@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import logo from "../assets/logo/logo.png"
+import Footer from "../Component/shared/footer/Footer";
 
 const MainLayout = () => {
     const navItem=<>
@@ -30,6 +31,7 @@ const MainLayout = () => {
                 </div>
                <div className="bg-black">
                <Outlet></Outlet>
+               <Footer></Footer>
                </div>
             </div>
             <div className="drawer-side z-20 ">

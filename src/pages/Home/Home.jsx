@@ -2,7 +2,8 @@ import React from 'react';
 import Banner from '../../Component/Home/Banner/Banner';
 // import About from '../../Component/Home/Banner/About/About';
 import About from '../../Component/Home/About/About'
-import Experience from '../../Component/Experience/Experience';
+import Experience from '../../Component/Home/Experience/Experience';
+import Project from '../../Component/Home/Project/Project';
 
 const Home = () => {
     return (
@@ -13,6 +14,8 @@ const Home = () => {
             <About id='about'></About>
             {/* experience section */}
             <Experience></Experience>
+            {/* project section */}
+            <Project></Project>
         </div>
     );
 };
