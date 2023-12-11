@@ -16,7 +16,7 @@ const Project = () => {
                 </div>
             </div>
             {/* project section */}
-            <div className='flex gap-10 justify-center'>
+            <div className='flex flex-col md:flex-row gap-10 justify-center'>
                 {/* group stady */}
                 <div className=' bg-[#1b1b1b] p-10 project-card'>
                 <div className='relative overflow-hidden'>
