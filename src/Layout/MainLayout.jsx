@@ -5,15 +5,17 @@ import Footer from "../Component/shared/footer/Footer";
 
 const MainLayout = () => {
     const navItem=<>
-    <NavLink to={'/'}><li className="mr-4">Home</li></NavLink>
+    <NavHashLink smooth to={'/#home'}><li className="mr-4">Home</li></NavHashLink> 
     <NavHashLink smooth to={'/#about'}>
     <li className="mr-4">About</li>
     </NavHashLink>
-    <NavLink to={'/'}><li className="mr-4">Experience</li></NavLink>
+    <NavHashLink smooth to={'/#experience'}><li className="mr-4">Experience</li></NavHashLink>
+    <NavHashLink smooth to={'/#Projects'}><li className="mr-4">Projects</li></NavHashLink>
     <NavLink><li>Contact</li></NavLink>
 </>
     return (
         <div className="drawer ">
+           
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle"/>
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}

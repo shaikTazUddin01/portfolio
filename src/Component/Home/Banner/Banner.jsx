@@ -11,12 +11,12 @@ const Banner = () => {
 
 
     return (
-        <div className="bg-cover  w-full shadow-xl" style={{ backgroundImage: `url(${bannerImg5})` }}>
+        <div className="bg-cover  w-full shadow-xl" style={{ backgroundImage: `url(${bannerImg5})` }} id='home'>
             <div className='bg-[#000000f3]'>
                 <div className='flex'>
                     <div className='w-2/3 flex justify-center items-center  flex-col'>
                         <div>
-                            <h1 className='uppercase text-5xl text-white font-bold'><span className='text-green-500'>Immagination</span> is more <br /> <span className='pt-10'>important than knowledge</span></h1>
+                            <h1 className='uppercase text-5xl text-white font-bold tracking-tighter leading-[50px]'><span className='text-green-500'>Immagination</span> is more <br /> <span className='pt-10'>important than knowledge</span></h1>
                             <p className=' mt-4 text-white  text-2xl tracking-widest'> Myself Shaik Taz Uddin </p>
                             <div className='relative'>
                                 <span className='text-3xl text-white mr-2 border-l-2 pl-2  border-green-500'>I Am</span>

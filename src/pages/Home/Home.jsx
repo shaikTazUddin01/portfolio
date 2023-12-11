@@ -18,7 +18,7 @@ const Home = () => {
             {/* project section */}
             <Project></Project>
             {/*  */}
-            <Text></Text>
+            {/* <Text></Text> */}
         </div>
     );
 };

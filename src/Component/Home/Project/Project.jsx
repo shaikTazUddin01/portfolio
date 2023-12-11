@@ -4,11 +4,11 @@ import study from '../../../assets/project/study group.png'
 import './project.css'
 const Project = () => {
     return (
-        <div className='mt-20 px-20 mb-20'>
+        <div className='mt-20 px-20 mb-20' id='Projects'>
             {/* project header */}
             <div className="text-white flex justify-center items-center mb-20 mt-20">
-                <div className="w-1/2 pl-20">
-                    <p className="">my Projects</p>
+                <div className="w-1/2 ">
+                    <p className="">My Projects</p>
                     <h1 className="text-5xl">My Working Projects</h1>
                 </div>
                 <div className="w-1/2">

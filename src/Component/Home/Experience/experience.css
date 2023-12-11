@@ -9,6 +9,62 @@ circle{
 }
 @keyframes anim{
     100%{
+        stroke-dashoffset: 97.5;
+    }
+}
+.circle2{
+    fill: none;
+    stroke: rgb(12 137 6);
+    /* stroke: url(#GradientColor); */
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim2 1s linear forwards;
+}
+@keyframes anim2    {
+    100%{
+        stroke-dashoffset: 45;
+    }
+}
+.circle3{
+    fill: none;
+    stroke: rgb(12 137 6);
+    /* stroke: url(#GradientColor); */
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim3 1s linear forwards;
+}
+@keyframes anim3    {
+    100%{
+        stroke-dashoffset: 112;
+    }
+}
+.circle4{
+    fill: none;
+    stroke: rgb(12 137 6);
+    /* stroke: url(#GradientColor); */
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim4 1s linear forwards;
+}
+@keyframes anim4   {
+    100%{
+        stroke-dashoffset: 112;
+    }
+}
+.circle5{
+    fill: none;
+    stroke: rgb(12 137 6);
+    /* stroke: url(#GradientColor); */
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim5 1s linear forwards;
+}
+@keyframes anim5    {
+    100%{
         stroke-dashoffset: 135;
     }
 }
