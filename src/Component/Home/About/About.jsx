@@ -4,7 +4,7 @@ import aboutme from '../../../assets/img/about1.png'
 
 const About = () => {
     return (
-        <div className='h-[500px] flex justify-center items-center mb-20'>
+        <div className='h-[500px] flex justify-center items-center mb-20' id='about'>
             <div className='w-1/2 relative'>
                 <div style={{ backgroundImage: `url(${bgimg})` }} className='w-full h-full bg-no-repeat flex justify-center items-center'>
                     <img src={aboutme} alt="" className='w-2/3 z-10 ' />

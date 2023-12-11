@@ -1,0 +1,12 @@
+.project-card-body{
+    background-color: rgba(17, 198, 7, 0.661);
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    transition: .5s;
+}
+.project-card:hover .project-card-body{
+   right: 0;
+}

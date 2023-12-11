@@ -1,11 +1,16 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 import logo from "../assets/logo/logo.png"
 import Footer from "../Component/shared/footer/Footer";
 
 const MainLayout = () => {
     const navItem=<>
     <NavLink to={'/'}><li className="mr-4">Home</li></NavLink>
+    <NavHashLink smooth to={'/#about'}>
+    <li className="mr-4">About</li>
+    </NavHashLink>
     <NavLink to={'/#about'}><li className="mr-4">About</li></NavLink>
+    <NavLink to={'/'}><li className="mr-4">Experience</li></NavLink>
     <NavLink><li>Contact</li></NavLink>
 </>
     return (
