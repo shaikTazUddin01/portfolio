@@ -1,5 +1,3 @@
-// import CountUp from 'react-countup/build/CountUp';
-import './experience.css'
 const Experience = () => {
     return (
         <div className="mt-20">
@@ -45,8 +43,8 @@ const Experience = () => {
                     </div>
                 </div>
                 {/* skill chart */}
-                {/* <div className="relative">
-               <div className="px-20 py-20">
+               <div className="relative">
+               <div className="px-20 py-20 relative">
                     <div className="w-[160px] h-[160px]  rounded-[50%] flex justify-center items-center shadow shadow-white">
                         <div className="w-[120px] h-[120px]  rounded-[50%] flex justify-center items-center shadow-inner shadow-white">
                             <p className="text-center text-white">
@@ -54,37 +52,14 @@ const Experience = () => {
                                 javaScript
                             </p>
                         </div>
-                    </div>
+
                     <div className="absolute">
-                    <svg height="160px" width="160px" >
-                        <circle cx="80" cy="80" r="70"  fill="red" />
+                    <svg height="180px" width="180px" >
+                        <circle cx="80" cy="80" r="80"  fill="red" />
                     </svg>
                     </div>
-               </div>
-                </div> */}
-                <div className='chert'>
-                    <div className="circular">
-                        <div className="inner"></div>
-                        <div className="outer"></div>
-                        <div className="numb">
-                            0%
-                            {/* <CountUp
-                            end={60}
-                            duration={2}
-                            ></CountUp> */}
-                        </div>
-                        <div className="circle">
-                            <div className="dot">
-                                <span></span>
-                            </div>
-                            <div className="bar left">
-                                <div className="progress"></div>
-                            </div>
-                            <div className="bar right">
-                                <div className="progress"></div>
-                            </div>
-                        </div>
                     </div>
+               </div>
                 </div>
             </div>
         </div>

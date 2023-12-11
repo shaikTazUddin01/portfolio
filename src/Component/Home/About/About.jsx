@@ -1,6 +1,6 @@
-import bgimg from '../../../../assets/img/about-bg-shape.png'
-import shaip from '../../../../assets/img/about-shape.svg'
-import aboutme from '../../../../assets/img/about1.png'
+import bgimg from '../../../assets/img/about-bg-shape.png'
+import shaip from '../../../assets/img/about-shape.svg'
+import aboutme from '../../../assets/img/about1.png'
 
 const About = () => {
     return (
