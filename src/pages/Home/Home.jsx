@@ -4,7 +4,7 @@ import Banner from '../../Component/Home/Banner/Banner';
 import About from '../../Component/Home/About/About'
 import Experience from '../../Component/Home/Experience/Experience';
 import Project from '../../Component/Home/Project/Project';
-import Text from '../../Component/Home/Text';
+import Contact from '../../Component/Home/contact/Contact';
 
 const Home = () => {
     return (
@@ -17,8 +17,8 @@ const Home = () => {
             <Experience></Experience>
             {/* project section */}
             <Project></Project>
-            {/*  */}
-            {/* <Text></Text> */}
+            {/*contact*/}
+            <Contact></Contact>
         </div>
     );
 };

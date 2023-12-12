@@ -11,41 +11,42 @@ const MainLayout = () => {
     </NavHashLink>
     <NavHashLink smooth to={'/#experience'}><li className="mr-4">Experience</li></NavHashLink>
     <NavHashLink smooth to={'/#Projects'}><li className="mr-4">Projects</li></NavHashLink>
-    <NavLink><li>Contact</li></NavLink>
+    <NavHashLink smooth to={'/#contact'}><li>Contact</li></NavHashLink >
 </>
     return (
-        <div className="drawer max-w-[1440px] mx-auto">
-           
-            <input id="my-drawer-3" type="checkbox" className="drawer-toggle"/>
-            <div className="drawer-content flex flex-col">
-                {/* Navbar */}
-                <div className="w-full navbar bg-black px-10">
-                    <div className="flex-none lg:hidden ">
-                        <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current text-white"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                        </label>
-                    </div>
-                    <div className="flex-1 px-2 mx-2 justify-end lg:justify-start">
-                        <img src={logo} alt="" />
-                    </div>
-                    <div className="flex-none hidden lg:block">
-                        <ul className="menu menu-horizontal text-white text-[16px]">
-                            {navItem}
-                           
-                        </ul>
-                    </div>
-                </div>
-               <div className="bg-black">
-               <Outlet></Outlet>
-               <Footer></Footer>
+        <div className="bg-black mx-auto">
+            <div className="drawer max-w-[1440px] mx-auto">
+           <input id="my-drawer-3" type="checkbox" className="drawer-toggle"/>
+           <div className="drawer-content flex flex-col">
+               {/* Navbar */}
+               <div className="w-full navbar bg-black px-10">
+                   <div className="flex-none lg:hidden ">
+                       <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current text-white"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                       </label>
+                   </div>
+                   <div className="flex-1 px-2 mx-2 justify-end lg:justify-start">
+                       <img src={logo} alt="" />
+                   </div>
+                   <div className="flex-none hidden lg:block">
+                       <ul className="menu menu-horizontal text-white text-[16px]">
+                           {navItem}
+                          
+                       </ul>
+                   </div>
                </div>
-            </div>
-            <div className="drawer-side z-20 ">
-                <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 min-w-[240px] min-h-full bg-[#090513] text-white text-[16px]">
-                   {navItem}
-                </ul>
-            </div>
+              <div className="bg-black">
+              <Outlet></Outlet>
+              <Footer></Footer>
+              </div>
+           </div>
+           <div className="drawer-side z-20 ">
+               <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
+               <ul className="menu p-4 min-w-[240px] min-h-full bg-[#090513] text-white text-[16px]">
+                  {navItem}
+               </ul>
+           </div>
+       </div>
         </div>
     );
 };

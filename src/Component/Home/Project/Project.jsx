@@ -12,13 +12,13 @@ const Project = () => {
                     <h1 className="text-3xl md:text-5xl">My Working Projects</h1>
                 </div>
                 <div className="mt-5 md:mt-0 w-full md:w-1/2">
-                    <p className="border-l-2 border-green-500 pl-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. we are offering online HR systems that can be customized depending on your business needs.</p>
+                    <p className="border-l-2 border-green-500 pl-2">In this section, I have shown my latest 3 projects I have many projects if you are interested to see my project visit my GitHub profile or download my Resume.</p>
                 </div>
             </div>
             {/* project section */}
             <div className='flex flex-col md:flex-row gap-10 justify-center'>
                 {/* group stady */}
-                <div className=' bg-[#1b1b1b] p-10 project-card'>
+                <div className=' bg-[#1b1b1b] p-10 project-card shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 hover:-mt-1 '>
                     <div className='relative overflow-hidden'>
                         <a href="https://benevolent-choux-40c88a.netlify.app" target='_blank' >
                             <img src={study} alt="" className='w-full h-[350px]' />
@@ -33,7 +33,7 @@ const Project = () => {
                 </div>
                 {/* building */}
                 {/* href="https://building-management-406201.web.app"  */}
-                <div className=' bg-[#1b1b1b] p-10 project-card'>
+                <div className=' bg-[#1b1b1b] p-10 project-card  shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 hover:-mt-1'>
                     <div className='relative overflow-hidden'>
                         <a href="https://building-management-406201.web.app" target='_blank' >
                             <img src={building} alt="" className='w-full h-[350px]' />
@@ -48,7 +48,7 @@ const Project = () => {
                 </div>
                 {/* https://new-brand-product.web.app/ */}
                 {/* brand-shop */}
-                <div className=' bg-[#1b1b1b] p-10 project-card'>
+                <div className=' bg-[#1b1b1b] p-10 project-card  shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 hover:-mt-1'>
                     <div className='relative overflow-hidden'>
                         <a href="https://new-brand-product.web.app" target='_blank'>
                             <img src={brandshop} alt="" className='w-full h-[350px]' />

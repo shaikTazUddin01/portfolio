@@ -10,7 +10,7 @@ const Experience = () => {
                     <p className="">My Experience</p>
                     <h1 className="text-3xl md:text-5xl">EXPERIENCE AND SKILL</h1>
                 </div>
-                <div className="w-full md:w-1/2 px-5 md:px-0 pt-5 md:pt-0">
+                <div className="w-full md:w-1/2 px-5 pt-5 md:pt-0">
                     <p className="border-l-2 border-green-500 pl-2">Front-end maestro with expertise in HTML, CSS, JS, React, and styling magic with Tailwind & Bootstrap. Node.js and Express.js wizard for robust back-end solutions</p>
                 </div>
             </div>
