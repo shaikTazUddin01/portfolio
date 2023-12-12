@@ -26,7 +26,7 @@ const MainLayout = () => {
                        </label>
                    </div>
                    <div className="flex-1 px-2 mx-2 justify-end lg:justify-start">
-                       <img src={logo} alt="" className="w-[120px]" />
+                       <img src={logo} alt="" className="w-[130px] mt-2" />
                    </div>
                    <div className="flex-none hidden lg:block">
                        <ul className="menu menu-horizontal text-white text-[16px]">

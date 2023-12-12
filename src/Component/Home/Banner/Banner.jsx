@@ -19,7 +19,7 @@ const Banner = () => {
                             <div className='relative'>
                                 <span className='text-2xl md:text-3xl text-white mr-2 border-l-2 pl-2  border-green-500'>A</span>
                                 <TypeAnimation
-                                    sequence={['Front End Developer', 500, 'React Developer']}
+                                    sequence={['Front End Developer', 500, 'React Developer',500]}
                                     style={{ fontSize: '36px' ,color:'#22c55e',display: 'inline-block' }}
                                     repeat={Infinity}
                                 />
