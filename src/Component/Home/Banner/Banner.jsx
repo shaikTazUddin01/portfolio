@@ -11,15 +11,15 @@ const Banner = () => {
 
 
     return (
-        <div className="bg-cover  w-full shadow-xl" style={{ backgroundImage: `url(${bannerImg5})` }} id='home'>
-            <div className='bg-[#000000f3]'>
-                <div className='flex'>
-                    <div className='w-2/3 flex justify-center items-center  flex-col'>
-                        <div>
-                            <h1 className='uppercase text-5xl text-white font-bold tracking-tighter leading-[50px]'><span className='text-green-500'>Immagination</span> is more <br /> <span className='pt-10'>important than knowledge</span></h1>
-                            <p className=' mt-4 text-white  text-2xl tracking-widest'> Myself Shaik Taz Uddin </p>
+        <div className="bg-cover  w-full shadow-xl block " style={{ backgroundImage: `url(${bannerImg5})` }} id='home'>
+            <div className='bg-[#000000f3] '>
+                <div className='flex flex-col-reverse md:flex-row'>
+                    <div className='px-5 md:w-2/3 flex justify-center items-center  flex-col'>
+                        <div className='text-center md:text-left '>
+                            <h1 className='uppercase text-4xl lg:text-5xl text-white font-bold tracking-tighter leading-[50px]'><span className='text-green-500'>Immagination</span> is more <br /> <span className='pt-10'>important than knowledge</span></h1>
+                            <p className=' mt-4 text-white  text-xl md:text-2xl tracking-widest'> Myself Shaik Taz Uddin </p>
                             <div className='relative'>
-                                <span className='text-3xl text-white mr-2 border-l-2 pl-2  border-green-500'>I Am</span>
+                                <span className='text-2xl md:text-3xl text-white mr-2 border-l-2 pl-2  border-green-500'>I Am</span>
                                 <TypeAnimation
                                     sequence={['Front End Developer', 500, 'React Developer']}
                                     style={{ fontSize: '36px' ,color:'#22c55e' }}
@@ -32,13 +32,11 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-1/3'>
-                        <img src={user} alt="" className='overflow-hidden bottom-0 mt-10 h-[500px] w-auto' />
+                    <div className='md:w-1/3 px-5 mx-auto'>
+                        <img src={user} alt="" className='overflow-hidden bottom-0 mt-10 h-[350px] md:h-[400px] lg:h-full w-auto' />
                     </div>
                 </div>
             </div>
-
-
 
         </div>
     );
