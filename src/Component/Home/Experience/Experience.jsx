@@ -19,7 +19,7 @@ const Experience = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-2 md:px-10 md:my-10">
                     <div className="card  bg-[#0c0c0c] shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 hover:-mt-1 text-white">
                         <div className="card-body">
-                            <h2 className="card-title">2014(JSC)</h2>
+                            <h2 className="card-title">2014 (JSC)</h2>
                             <p className="text-xl font-semibold text-green-500">Junior School Certificate</p>
                             <p>All You Need To Do Your Best Work Together In One Package Works Seamlessly Computer</p>
                         </div>
