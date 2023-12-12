@@ -3,16 +3,33 @@ import { FaGithub, FaLinkedin, FaLocationPin, FaPhone } from 'react-icons/fa6';
 import { MdEmail } from "react-icons/md";
 import conImg from "../../../assets/contact/contact.gif"
 import bgimg from '../../../assets/bg-img/about-bg.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-    return (
-        <div id='contact ' className=' px-5 md:px-20 bg-cover pt-5 pb-16 ' style={{backgroundImage:`url(${bgimg})`}}> 
+    const handlesubmit = (e) => {
+        e.preventDefault();
 
-            {/* <div>
-                <h1 className='  text-white mt-5 left-0 '>contact Us</h1>
-                
-                <h1 className='text-[22px] md:text-4xl lg:text-4xl text-[#f8f8f8] font-extrabold mb-5 mt-1 '>Contact the <span className='text-green-500 uppercase'>production</span></h1>
-            </div> */}
+        const form = e.target;
+        console.log(form)
+        const fName = form.fName.value;
+        console.log(fName)
+        const lName = form.lName.value;
+        console.log(lName)
+        const email = form.email.value;
+        console.log(email)
+        const message = form.messages.value;
+        console.log(message)
+       const name =fName+" "+lName;
+       console.log(fName,lName,email,message);
+       toast.success(`Thank you ${name}. I will contact you soon`)
+
+       form.reset()
+    }
+    return (
+        <div id='contact' className=' px-5 md:px-20 bg-cover pt-5 pb-16 ' style={{ backgroundImage: `url(${bgimg})` }}>
+
+
             <div className="text-white flex flex-col md:flex-row justify-center items-center mb-10 md:mb-20 mt-20">
                 <div className="w-full md:w-1/2  mt-10 md:mt-0">
                     <p className="">Contact Us</p>
@@ -27,49 +44,43 @@ const Contact = () => {
                     <img src={conImg} alt="" className='mt-5' />
                 </div>
                 <div className='w-full lg:w-1/2 text-white mt-10 md:mt-0  bg-[#0c0c0c] shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 rounded-xl '>
-                    <form className="card-body text-white">
+                    <form className="card-body text-white" onSubmit={handlesubmit}>
                         <div className='flex flex-col lg:flex-row gap-4'>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text text-white">First Name</span>
                                 </label>
-                                <input type="text" placeholder="Enter First Name" className="input input-bordered" required />
+                                <input type="text" placeholder="Enter First Name" className="input input-bordered text-black" name='fName' required/>
                             </div>
                             <div className="form-control w-full">
                                 <label className="label">
                                     <span className="label-text text-white">Last Name</span>
                                 </label>
-                                <input type="text" placeholder="Enter Last Name" className="input input-bordered" required />
+                                <input type="text" placeholder="Enter Last Name" className="input input-bordered text-black" name='lName' required />
                             </div>
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-white">Email</span>
                             </label>
-                            <input type="email" placeholder="Enter Email" className="input input-bordered" required />
+                            <input type="email" placeholder="Enter Email" className="input input-bordered text-black"  name='email' required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-white">Email</span>
                             </label>
-                            <textarea placeholder="Write Messages" className="textarea textarea-bordered" required />
+                            <textarea placeholder="Write Messages" className="textarea textarea-bordered text-black" name='messages' required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Send Messages</button>
+                            <button className="btn btn-primary" type='submit'>Send Messages</button>
                         </div>
                     </form>
-                    {/* <p className='flex gap-2 items-center '><FaLinkedin /><span><a href="">shaiktazuddin-dev</a></span></p>
 
-                    <p className='flex gap-2 items-center'><FaGithub></FaGithub><span><a href="">shaiktazuddin07</a></span></p>
-
-                    <p className='flex gap-2 items-center justify-center'><MdEmail></MdEmail><span><a href="">shaiktazuddin@gmail.com</a></span></p>
-
-                    <p className='flex gap-2 items-center justify-center'><FaLocationPin></FaLocationPin><span>Khulna,Bangladesh</span></p>
-
-                    <p className='flex gap-2 items-center justify-center'><FaPhone></FaPhone><span><a href="">+880 1834 957677</a></span></p> */}
 
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
+
         </div>
     );
 };
