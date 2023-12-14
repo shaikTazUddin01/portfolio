@@ -1,11 +1,12 @@
 .project-card-body{
-    background-color: rgba(7, 79, 3, 0.958);
+    background-color: #02de56;
     position: absolute;
     height: 350px;
     width: 100%;
     top: 0;
     right: -100%;
     transition: .5s;
+    text-align: justify;
 }
 .project-card:hover .project-card-body{
    right: 0;

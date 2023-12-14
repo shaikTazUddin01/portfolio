@@ -1,0 +1,12 @@
+.header-text {
+    /* margin-top: -35px; */
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #171c1e;
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    z-index: -1;
+
+}
