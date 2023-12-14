@@ -34,7 +34,7 @@ const Contact = () => {
     return (
         <div id='contact' className='  bg-cover  ' style={{ backgroundImage: `url(${bgimg})` }}>
             <div className='bg-[#0d0d0de2]
-            px-5 md:px-20 pt-5 pb-16
+            px-5 md:px-20 pt-5 pb-20
             '>
                 <div className="text-white flex flex-col md:flex-row justify-center items-center mb-10 md:mb-20 mt-20"
                     data-aos="fade-up"

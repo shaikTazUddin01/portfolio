@@ -1,6 +1,6 @@
 // import bannerImg from '../../../assets/bg-img/project-bg.jpg'
 import bannerImg from '../../../assets/bg-img/bg1.gif'
-import user from '../../../assets/user/author1.png'
+// import user from '../../../assets/user/author1.png'
 import user1 from '../../../assets/user/13.png'
 import { TypeAnimation } from 'react-type-animation';
 

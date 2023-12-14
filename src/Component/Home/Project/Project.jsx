@@ -2,13 +2,15 @@ import brandshop from '../../../assets/project/brand shop.png'
 import building from '../../../assets/project/building-management.png'
 import study from '../../../assets/project/study group.png'
 import TitleText from '../../HeaderText/TitleText';
+import aboutbg from '../../../assets/bg-img/testimonials-bg.png'
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './project.css'
 const Project = () => {
     Aos.init()
     return (
-        <div className='mt-20 px-5 md:px-20 mb-20' id='Projects'>
+        <div className='py-6 px-5 md:px-20' id='Projects'style={{ backgroundImage: `url(${aboutbg})` }}>
             {/* project header */}
             <div className="text-white flex flex-col md:flex-row justify-center items-center mb-10 md:mb-20 mt-20"
              data-aos="fade-up"
@@ -28,7 +30,7 @@ const Project = () => {
                 </div>
             </div>
             {/* project section */}
-            <div className='flex flex-col md:flex-row gap-10 justify-center'
+            <div className='flex flex-col md:flex-row gap-10 justify-center pb-20 '
             data-aos="fade-up"
             data-aos-duration="3000"
             data-aos-anchor-placement="top-bottom"

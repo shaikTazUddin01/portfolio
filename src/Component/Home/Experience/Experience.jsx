@@ -10,7 +10,7 @@ const Experience = () => {
     return (
         <div className=" bg-cover  bg-no-repeat" id='experience' style={{ backgroundImage: `url(${bgimg1})` }}>
            <div className='bg-[#0d0d0de2] '>
-           <div className="text-white flex flex-col md:flex-row justify-center items-center mb-10 md:mb-20 pt-20" 
+           <div className="text-white flex flex-col md:flex-row justify-center items-center mb-10 md:mb-20 pt-24" 
             data-aos="fade-up"
             data-aos-duration="3000"
             data-aos-anchor-placement="top-bottom"

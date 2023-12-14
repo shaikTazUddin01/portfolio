@@ -2,12 +2,13 @@ import { TypeAnimation } from 'react-type-animation';
 import bgimg from '../../../assets/img/about-bg-shape.png'
 import shaip from '../../../assets/img/about-shape.svg'
 import aboutme1 from '../../../assets/img/6-min.png'
+import aboutbg from '../../../assets/bg-img/testimonials-bg.png'
 import { FaDownload } from "react-icons/fa6";
 import './about.css'
 import TitleText from '../../HeaderText/TitleText';
 const About = () => {
     return (
-        <div className='flex flex-col md:flex-row first-letter:justify-center items-center pt-20 md:pb-20 ' id='about'>
+        <div className='flex flex-col md:flex-row first-letter:justify-center items-center pt-24 md:pb-32 bg-cover' id='about' style={{ backgroundImage: `url(${aboutbg})` }}>
             <div className='w-full p-2 md:w-1/2 relative'>
                 <div style={{ backgroundImage: `url(${bgimg})` }} className='w-full h-full bg-no-repeat flex justify-center items-center'>
                     <img src={aboutme1} alt="" className='w-[90%] lg:w-2/3 z-10 rounded ' />
