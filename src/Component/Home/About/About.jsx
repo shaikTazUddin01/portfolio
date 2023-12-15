@@ -8,7 +8,7 @@ import './about.css'
 import TitleText from '../../HeaderText/TitleText';
 const About = () => {
     return (
-        <div className='flex flex-col md:flex-row first-letter:justify-center items-center pt-24 md:pb-32 bg-cover' id='about' style={{ backgroundImage: `url(${aboutbg})` }}>
+        <div className='flex flex-col md:flex-row first-letter:justify-center items-center pt-24 pb-20  md:pb-32 bg-cover' id='about' style={{ backgroundImage: `url(${aboutbg})` }}>
             <div className='w-full p-2 md:w-1/2 relative'>
                 <div style={{ backgroundImage: `url(${bgimg})` }} className='w-full h-full bg-no-repeat flex justify-center items-center'>
                     <img src={aboutme1} alt="" className='w-[90%] lg:w-2/3 z-10 rounded ' />
@@ -34,7 +34,7 @@ const About = () => {
             {/* </div> */}
             <div>
                 <a href="https://drive.google.com/uc?export=download&id=156ofdM6auEFMQlfQWClA1V7tNGCnWTC_">
-                    <button className='py-2 px-5 bg-[#1fca61] text-xl font-semibold rounded-md mt-10 flex justify-center items-center gap-2'>
+                    <button className='py-2 px-5 bg-[#1fca61] hover:bg-[#2aca1f] text-xl font-semibold rounded-md mt-10 flex justify-center items-center gap-2'>
                         <FaDownload></FaDownload>
                         <p>Resume</p>
                     </button>

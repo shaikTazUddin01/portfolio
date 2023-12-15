@@ -10,3 +10,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/* a:focus{
+    color: rgb(17, 255, 0) !important;
+
+} */
+a:hover{
+    color: #1fca61;
+}
+*{
+    scroll-behavior: smooth;
+}
+.collapse-menu>a>li {
+    padding: 5px 0px 1px 10px;
+    margin: 2px;
+    border: 0px 0px 2px 0px solid;
+    border-bottom: 1px solid;
+}

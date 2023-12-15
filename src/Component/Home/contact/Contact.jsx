@@ -58,7 +58,8 @@ const Contact = () => {
                     <div className='md:w-1/2 md:hidden lg:flex'>
                         <img src={conImg} alt="" className='mt-5 ' />
                     </div>
-                    <div className='w-full lg:w-1/2 text-white mt-10 md:mt-0  bg-[#0c0c0c] shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 rounded-xl '>
+                    <div className='w-full lg:w-1/2 text-white mt-10 md:mt-0  bg-[#0c0c0c] 
+                    shadow-lg shadow-green-950 hover:shadow-xl hover:shadow-green-800 rounded-xl '>
                         <form className="card-body text-white" onSubmit={handlesubmit}>
                             <div className='flex flex-col lg:flex-row gap-4'>
                                 <div className="form-control w-full">
@@ -82,7 +83,7 @@ const Contact = () => {
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-white">Email</span>
+                                    <span className="label-text text-white">Messages : </span>
                                 </label>
                                 <textarea placeholder="Write Messages" className="textarea textarea-bordered text-black" name='messages' required />
                             </div>
